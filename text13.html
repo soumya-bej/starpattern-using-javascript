@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Print Hollow Diamond Star Pyramid</h1>
+
+    <script>
+        function printHollowStarDiamondNestedLoop(rows) {
+            
+            for (let i = 1; i <= rows; i++) {
+              let pattern = "";
+              for (let j = 1; j <= rows - i; j++) {
+                pattern += " ";
+              }
+              for (let j = 1; j <= 2 * i - 1; j++) {
+                if (j === 1 || j === 2 * i - 1) {
+                  pattern += "*";
+                } else {
+                  pattern += " ";
+                }
+              }
+              console.log(pattern);
+            }
+          
+            
+            for (let i = rows - 1; i >= 1; i--) {
+              let pattern = "";
+              for (let j = 1; j <= rows - i; j++) {
+                pattern += " ";
+              }
+              for (let j = 1; j <= 2 * i - 1; j++) {
+                if (j === 1 || j === 2 * i - 1) {
+                  pattern += "*";
+                } else {
+                  pattern += " ";
+                }
+              }
+              console.log(pattern);
+            }
+          }
+          
+          
+          printHollowStarDiamondNestedLoop(5);
+          
+    </script>
+</body>
+</html>

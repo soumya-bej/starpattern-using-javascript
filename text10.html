@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hollow inverted pyramid</h1>
+
+    <script>
+        let n = 5; 
+        for (let i = n; i >= 1; i--) {     
+        let str = ''
+        for(let j = 1; j <= 2*n-1 ; ++j){ 
+        if(i+j == n +1||(i+n==j+1) ||i==n) 
+        str+='* '; 
+        else
+        str+='  '; 
+    } 
+    console.log(str); 
+}
+    </script>
+</body>
+</html>
